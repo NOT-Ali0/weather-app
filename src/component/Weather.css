@@ -1,0 +1,141 @@
+.weather{
+    place-self: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg,#2f4680,#500ae4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-bar input{
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left:25px;
+    color: #626262;
+    background: #ebfffc;
+    font-size: 18px;
+}
+
+/* .search-bar img{
+    width: 45px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #ebfffc;
+    cursor: pointer;
+} */
+
+.weather-icon{
+    width: 150px;
+    margin: 30px 0;
+}
+
+.temp{
+    color: #fff;
+    font-size: 80px;
+    line-height: 1;
+}
+.location{
+    color: #fff;
+    font-size: 40px;
+}
+
+.weather-data{
+    width: 100%;
+    margin-top: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-data .col{
+    display: flex;
+    align-items: flex-start;
+    gap:12px ;
+    font-size: 18px;
+}
+
+
+.weather-data .col span{
+    display: block;
+    font-size: 16px;
+}
+
+.weather-data .col img{
+    width: 26px;
+    margin-top: 10px;
+}
+
+/* input design */
+
+
+.input::placeholder {
+  transition: all 0.5s ease-in, transform 0.2s ease-in 0.6s;
+}
+
+.input:focus::placeholder {
+  padding-left: 100px;
+  transform: translateY(-50px);
+}
+
+
+/* button des */
+
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+
+
+.button:hover {
+  width: 100px;
+  border-radius: 50px;
+  transition-duration: .3s;
+  background-color: #fff;
+  align-items: center;
+}
+
+.button:hover svg{
+    display: none;
+}
+
+.button::before {
+  position: absolute;
+  top: -13px;
+  content: "Search";
+  color: black;
+  transition-duration: .3s;
+  font-size: 10px;
+}
+
+
+
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  transform: translateY(30px);
+  transition-duration: .3s;
+}
+
